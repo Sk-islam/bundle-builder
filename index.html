@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <title>Bundle Builder</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="bundle-heading">Buy 3 and Save 30%</h2>
+    </header>
+    <main class="bundle-builder">
+      <section class="product-grid">
+        <!-- Product Card -->
+        <div
+          class="product-card"
+          data-id="1"
+          data-name="Tie-Dye Lounge Set"
+          data-price="999"
+          data-image="./assets/photo-1.jpg"
+        >
+          <img src="./assets/photo-1.jpg" alt="Tie-Dye Lounge Set" />
+          <h3 class="product-title">Tie-Dye Lounge Set</h3>
+          <p class="product-price">₹999</p>
+          <button class="add-btn">
+            Add to Bundle <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+
+        <div
+          class="product-card"
+          data-id="2"
+          data-name="Sunburst tracksuit"
+          data-price="999"
+          data-image="./assets/photo-2.jpg"
+        >
+          <img src="./assets/photo-2.jpg" alt="Sunburst tracksuit" />
+          <h3 class="product-title">Sunburst tracksuit</h3>
+          <p class="product-price">₹999</p>
+          <button class="add-btn">
+            Add to Bundle <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div
+          class="product-card"
+          data-id="3"
+          data-name="Retro Red Streetwear"
+          data-price="999"
+          data-image="./assets/photo-3.jpg"
+        >
+          <img src="./assets/photo-3.jpg" alt="Retro Red Streetwear" />
+          <h3 class="product-title">Retro Red Streetwear</h3>
+          <p class="product-price">₹999</p>
+          <button class="add-btn">Add to Bundle</button>
+        </div>
+        <div
+          class="product-card"
+          data-id="4"
+          data-name="Urban sportwear Combo"
+          data-price="999"
+          data-image="./assets/photo-2.jpg"
+        >
+          <img src="./assets/photo-4.jpg" alt="Urban sportwear Combo" />
+          <h3 class="product-title">Urban sportwear Combo</h3>
+          <p class="product-price">₹999</p>
+          <button class="add-btn">Add to Bundle</button>
+        </div>
+        <div
+          class="product-card"
+          data-id="5"
+          data-name="Oversized knit & Coat"
+          data-price="999"
+          data-image="./assets/photo-5.jpg"
+        >
+          <img src="./assets/photo-5.jpg" alt="Oversized knit & Coat" />
+          <h3 class="product-title">Oversized knit & Coat</h3>
+          <p class="product-price">₹999</p>
+          <button class="add-btn">Add to Bundle</button>
+        </div>
+        <div
+          class="product-card"
+          data-id="6"
+          data-name="Chic Monochrome Blazers"
+          data-price="999"
+          data-image="./assets/photo-6.jpg"
+        >
+          <img src="./assets/photo-6.jpg" alt="Chic Monochrome Blazers" />
+          <h3 class="product-title">Chic Monochrome Blazers</h3>
+          <p class="product-price">₹999</p>
+          <button class="add-btn">Add to Bundle</button>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="bundle-sidebar">
+        <div class="sidebar-header">
+          <h2>Create a Bundle</h2>
+          <p class="subtext">
+            Add <span>at least 3</span> products and <span>save 30%</span>
+          </p>
+        </div>
+
+        <div class="progress-section">
+          <div class="progress-bar-container">
+            <div class="progress-bar"><span style="width: 0%"></span></div>
+            <p class="progress-text">Bundle Progress: 0 of 3</p>
+          </div>
+        </div>
+
+        <!-- Selected Products -->
+        <ul class="selected-products"></ul>
+
+        <!-- Price Breakdown -->
+        <div class="pricing">
+          <p>Total: ₹<span id="total-price">0</span></p>
+          <p>Discount: ₹<span id="discount-price">0</span></p>
+          <p>
+            <strong>Subtotal: ₹<span id="subtotal">0</span></strong>
+          </p>
+        </div>
+
+        <button id="bundle-cta" disabled class="cta-btn">
+          <span id="cta-text">Add 3 items to proceed</span>
+          <span id="cta-icon"><i class="fas fa-arrow-right"></i></span>
+        </button>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
